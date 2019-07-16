@@ -1,0 +1,50 @@
+.dataTables_wrapper {
+  padding-left: 0!important;
+  padding-right: 0!important;
+  font-size: .80rem!important;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.badge {
+    font-size: 0.8125rem!important;
+    font-weight: 400!important;
+    line-height: 1!important;
+}
+.badge-outline-success {
+    color: #1cc88a!important;
+}
+.badge-outline-danger{
+  color: #e74a3b!important;
+}
+.badge-outline-info {
+  color: #36b9cc!important;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<ESTILO PARA NAVS <<<<<<<<<<<<<<<<<<<<<*/
+.btn-link-edit {
+  transition: 0.3s;
+  opacity: 0.8;
+  color: #f6c23e!important;
+}
+.btn-link-edit:hover {
+  opacity: 1;
+}
+.btn-link-delete {
+  transition: 0.3s;
+  opacity: 0.8;
+  color: #e74a3b!important;
+}
+.btn-link-delete:hover{
+  opacity: 1;
+}
+/* ------------ estilos para el nav de reception */
+.nav-pills .nav-link {
+    padding: .25rem .5rem!important;
+    color: #4e73df!important;
+    border-radius: .2rem!important;
+}
+.nav-pills .nav-item{
+    margin-left: 1rem!important;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    color: #ffffff!important;
+    background-color: #4e73df!important;
+}

@@ -1,0 +1,13 @@
+.btn-user {
+  border-radius: 10rem;
+  padding: .75rem 1rem;
+  font-size: .8rem;
+}
+/* .bg-login-image {
+  background: url('../img/luz-room.jpg')!important;
+
+  width: 100%;
+} */
+.bg-login-room img {
+  width: 100%;
+}

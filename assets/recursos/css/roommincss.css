@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('buttonmincss.css');
+@import url('callout.css');
+@import url('login.css');
+@import url('reception.css');
+
+.form-control {
+    border: 1px solid #e0e0ef!important;
+    font-weight: 400!important;
+    font-size: 0.8125rem!important;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.navbar .link-bar {
+  color: #ffffff!important;
+  font-weight: 400;
+}
+.navbar .link-bar:hover {
+  color: #881518!important;
+  text-decoration: none;
+}
+.bg-navbar-red {
+    /* background: linear-gradient(85deg, #c70039, #900c3f)!important; */
+    background-color: #12182B!important;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.badge {
+    font-size: 0.8125rem!important;
+    font-weight: 400!important;
+    line-height: 1!important;
+    padding: .3rem .55rem!important;
+}
+.badge.badge-pill {
+    border-radius: 10rem!important;
+}
+.badge-success-melody{
+    color: #ffffff!important;
+    border: 1px solid #04B76B!important;
+    background: #04B76B!important;
+}
+.badge-danger-melody{
+    color: #ffffff!important;
+    border: 1px solid #ff5e6d!important;
+    background: #ff5e6d!important;
+}
+.badge-outline-info {
+  color: #0B94F7!important;
+  border: 1px solid #0B94F7!important;
+}
+.badge-outline-success {
+    color: #04B76B!important;
+    border: 1px solid #04B76B!important;
+}
+.badge-outline-danger{
+  color: #ff5e6d!important;
+  border: 1px solid #ff5e6d!important;
+}
+/*---------------------------------------*/
+/* #section-nav {
+  background-color: #ffffff;
+  width: 100%;
+  border-bottom: 1px solid #e0e0ef;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+} */
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/

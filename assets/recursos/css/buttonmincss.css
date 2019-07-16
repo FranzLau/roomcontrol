@@ -1,0 +1,154 @@
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.btn-primary-kumela {
+  color: #ffffff;
+  background: linear-gradient(85deg, #ff4a33, #fb2662);
+  border: none;
+  transition: 0.3s;
+  opacity: 0.8;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.btn-primary-kumela:hover {
+  cursor: pointer;
+  opacity: 1;
+  color: #ffffff!important;
+}
+.btn-primary-kumela:active {
+  background: linear-gradient(85deg, #ff4a33, #fb2662);
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.btn-primary-send {
+  color: #ffffff;
+  background-color: #fb2662;
+  border: none;
+  transition: 0.3s;
+  opacity: 0.8;
+}
+.btn-primary-send:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.btn-primary-melody {
+    color: #ffffff;
+    background-color: #392c70;
+    border-color: #392c70;
+}
+.btn-primary-melody:hover{
+    cursor: pointer;
+    background-color: #2b2155;
+    border-color: #261c4b;
+}
+.btn-primary-melody:active{
+    color: #ffffff;
+    background-color: #261e4b;
+    border-color: #221a42;
+}
+.btn-danger-melody{
+    color: #ffffff;
+    background-color: #ff5e6d;
+    border-color: #ff5e6d;
+}
+.btn-danger-melody:hover {
+    cursor: pointer;
+    background-color: #ff384a;
+    border-color: #ff2b3f;
+}
+.btn-danger-melody:active{
+    background-color: #ff2b3f;
+    border-color: #ff1e33;
+}
+.btn-light-melody {
+    color: #212529;
+    background-color: #e9e8ef;
+    border-color:  #e9e8ef;
+}
+.btn-light-melody:hover {
+    cursor: pointer;
+    background-color: #d3d1df;
+    border-color: #cccada;
+}
+.btn-light-melody:active {
+    color: #212529;
+    background-color: #cccada;
+    border-color: #c5c2d5;
+}
+.btn-info-melody {
+    color: #ffffff;
+    background-color: #0B94F7;
+    border-color: #0B94F7;
+}
+.btn-info-melody:hover {
+    cursor: pointer;
+    background-color: #077ed5;
+    border-color: #0777c8;
+}
+.btn-info-melody:active {
+    color: #ffffff;
+    background-color: #0777c8;
+    border-color: #0670bc;
+}
+.btn-success-melody{
+    color: #ffffff;
+    background-color: #04b76b;
+    border-color: #04b76b;
+}
+.btn-success-melody:hover {
+    cursor: pointer;
+    background-color: #039255;
+    border-color: #03854e;
+}
+.btn-success-melody:active{
+    background-color: #03854e;
+    border-color: #037947;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.btn-warning-control {
+  color: #ffffff;
+  background-color: #f5a623;
+  cursor: pointer;
+}
+/*----------------------Botones inversa-------------------*/
+.btn-inverse-warning{
+    background-color: rgba(245, 166, 35, 0.2);
+    background-image: none;
+    border-color: rgba(245, 166, 35, 0);
+    color: #f5a623;
+}
+.btn-inverse-warning:hover{
+    color: #ffffff;
+    background-color: #f5a623;
+    cursor: pointer;
+}
+.btn-inverse-danger {
+    background-color: rgba(255, 94, 109, 0.2);
+    background-image: none;
+    border-color: rgba(255, 94, 109, 0);
+    color: #FF5E6D;
+}
+.btn-inverse-danger:hover{
+    color: #ffffff;
+    background-color:#FF5E6D;
+    cursor: pointer;
+}
+.btn-inverse-success {
+  background-color: rgba(4, 183, 107, 0.2);
+  background-image: none;
+  border-color: rgba(4, 183, 107, 0);
+  color:  #04b76b;
+}
+.btn-inverse-success:hover{
+  color: #ffffff;
+  background-color: #04b76b;
+  cursor: pointer;
+}
+.btn-inverse-info {
+  background-color: rgba(11, 148, 247, 0.2);
+  background-image: none;
+  border-color: rgba(11, 148, 247, 0);
+  color: #0B94F7;
+}
+.btn-inverse-info:hover {
+  color: #ffffff;
+  background-color: #0B94F7;
+  cursor: pointer;
+}

@@ -1,0 +1,15 @@
+.bd-callout {
+  padding: 1rem;
+  /* margin-top: 1.15rem;
+  margin-bottom: 1.15rem; */
+  border: 1px solid #eee;
+  border-left-width: .25rem;
+  border-radius: .25rem;
+  background-color: #ffffff;
+}
+.bd-callout p:last-child {
+  margin-bottom: 0;
+}
+.bd-callout-warning {
+  border-left-color: #f0ad4e;
+}
