@@ -63,19 +63,19 @@
                             <div class="no-arrow">
 
                               <a href="client.php" class="btn btn-sm btn-info"><i class="fas fa-user fa-sm fa-fw"></i></a>
-                              <button type="button" name="button" class="btn btn-sm btn-success ml-2"><i class="fas fa-plus fa-sm fa-fw"></i></button>
+                              <button type="button" id="btn-AddClient" class="btn btn-sm btn-success ml-2"><i class="fas fa-plus fa-sm fa-fw"></i></button>
                               <button type="button" name="button" class="btn btn-sm btn-danger ml-2"><i class="fas fa-trash fa-sm fa-fw"></i></button>
 
                             </div>
                           </div>
                           <div class="card-body">
-                            <form id="">
+                            <form id="form-NewReception">
                               <div class="row">
                                 <div class="col-sm-4">
                                   <div class="form-group row">
-                                    <label for="staticEmail" class="col-sm-4 col-form-label col-form-label-sm">Room:</label>
+                                    <label for="selectReceptionRoom" class="col-sm-4 col-form-label col-form-label-sm">Room:</label>
                                     <div class="col-sm-8">
-                                      <select class="form-control form-control-sm" id="selectReceptionRoom" name="producVen" style="width:100%">
+                                      <select class="form-control form-control-sm" id="selectReceptionRoom" name="selectReceptionRoom" style="width:100%">
         																<option value="">Elije habitación</option>
         																<?php $room = $con->query("SELECT * FROM room WHERE estado_room='Disponible' ");
         																		while ($row = $room->fetch_assoc()) {
@@ -89,23 +89,23 @@
                                     </div>
                                   </div>
                                   <div class="form-group row">
-                                    <label for="inputPassword" class="col-sm-4 col-form-label col-form-label-sm">Tarifa:</label>
+                                    <label for="selectTarifaRoom" class="col-sm-4 col-form-label col-form-label-sm">Tarifa:</label>
                                     <div class="col-sm-8">
-                                      <input type="text" readonly class="form-control form-control-sm" id="inputPassword">
+                                      <input type="text" readonly class="form-control form-control-sm" id="selectTarifaRoom" name="selectTarifaRoom">
                                     </div>
                                   </div>
-                                  <div class="form-group row mb-0">
-                                    <label for="inputPassword" class="col-sm-4 col-form-label col-form-label-sm">Tipo:</label>
+                                  <div class="form-group row mb-lg-0">
+                                    <label for="selectTipoRoom" class="col-sm-4 col-form-label col-form-label-sm">Tipo:</label>
                                     <div class="col-sm-8">
-                                      <input type="text" readonly class="form-control form-control-sm" id="inputPassword">
+                                      <input type="text" readonly class="form-control form-control-sm" id="selectTipoRoom" name="selectTipoRoom">
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-sm-8">
+                                <div class="col-sm-4">
                                   <div class="form-group row">
-                                    <label for="staticEmail" class="col-sm-2 col-form-label col-form-label-sm">N° Doc:</label>
-                                    <div class="col-sm-4" id="searchClientSelect">
-                                      <select class="form-control form-control-sm" id="selectReceptionCli" name="selectReception" style="width:100%">
+                                    <label for="selectReceptionCli" class="col-sm-4 col-form-label col-form-label-sm">N° Doc:</label>
+                                    <div class="col-sm-8" id="searchClientSelect">
+                                      <select class="form-control form-control-sm" id="selectReceptionCli" name="selectReceptionCli" style="width:100%">
                                         <option value="">Elije Docum.</option>
                                         <?php
                                             $client = $con->query("SELECT * FROM client");
@@ -118,29 +118,43 @@
                                         ?>
                                       </select>
                                     </div>
-                                    <div class="col-sm-6 mt-3 mt-lg-0">
-                                      <input type="text" readonly class="form-control form-control-sm" id="staticEmail">
+                                  </div>
+                                  <div class="form-group row">
+                                    <label for="selectNombCli" class="col-sm-4 col-form-label col-form-label-sm">Nombre:</label>
+                                    <div class="col-sm-8">
+                                      <input type="text" readonly class="form-control form-control-sm" id="selectNombCli" name="selectNombCli">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row mb-lg-0">
+                                    <label for="selectApeCli" class="col-sm-4 col-form-label col-form-label-sm">Apellido:</label>
+                                    <div class="col-sm-8">
+                                      <input type="text" readonly class="form-control form-control-sm" id="selectApeCli" name="selectNombCli">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-sm-4">
+                                  <div class="form-group row">
+                                    <label for="DateStart" class="col-sm-4 col-form-label col-form-label-sm">Inicio:</label>
+                                    <div class="col-sm-8">
+                                      <input type="date" class="form-control form-control-sm" id="DateStart" name="DateStart">
                                     </div>
                                   </div>
                                   <div class="form-group row">
-                                    <label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm">Descuento:</label>
-                                    <div class="col-sm-4">
-                                      <input type="number" step="any" class="form-control form-control-sm" id="inputPassword">
+                                    <label for="DateEnd" class="col-sm-4 col-form-label col-form-label-sm">Fin:</label>
+                                    <div class="col-sm-8">
+                                      <input type="date" class="form-control form-control-sm" id="DateEnd" name="DateEnd">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row mb-lg-0">
+                                    <label for="DescuentoRoom" class="col-sm-4 col-form-label col-form-label-sm">Descuento:</label>
+                                    <div class="col-sm-8">
+                                      <input type="number" step="any" class="form-control form-control-sm" id="DescuentoRoom" name="DescuentoRoom">
                                     </div>
                                     <!-- <div class="col-sm-6 mt-3 mt-lg-0">
                                       <input type="text" readonly class="form-control form-control-sm" id="inputPassword">
                                     </div> -->
                                   </div>
-                                  <div class="form-group row mb-0">
-                                    <label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm">Inicio:</label>
-                                    <div class="col-sm-4">
-                                      <input type="date" class="form-control form-control-sm" id="inputPassword">
-                                    </div>
-                                    <label for="inputPassword" class="col-sm-2 col-form-label col-form-label-sm text-right">Fin:</label>
-                                    <div class="col-sm-4">
-                                      <input type="date" class="form-control form-control-sm" id="inputPassword">
-                                    </div>
-                                  </div>
+
                                 </div>
                               </div>
                             </form>
@@ -157,16 +171,6 @@
                         <!-- Card Table Temporal -->
                         <div id="TableReceptionTempLoad"></div>
 
-                        <!-- <div class="card shadow">
-                          <div class="card-body p-0">
-
-                            <div class="row">
-                              <div class="col-sm-12">
-
-                              </div>
-                            </div>
-                          </div>
-                        </div> -->
                       </div>
                     </div>
 
@@ -204,6 +208,63 @@
       $(document).ready(function() {
         $('#tableAttention').load('../componentes/tableAttent.php');
         $('#TableReceptionTempLoad').load("../componentes/tableReceptionTemp.php");
+      });
+    </script>
+    <script type="text/javascript">
+      jQuery(document).ready(function() {
+        $('#selectReceptionRoom').change(function() {
+  				$.ajax({
+  					url: '../procesos/producto/readProducto.php',
+  					type: 'POST',
+  					data: "idprod=" + $('#selectReceptionRoom').val(),
+  					success:function(r){
+  						datos = jQuery.parseJSON(r);
+  						$('#selectTarifaRoom').val(datos['ProdPrecio']);
+  						$('#selectTipoRoom').val(datos['ProdCategory']);
+            }
+  				})
+  			});
+        $('#selectReceptionCli').change(function() {
+  				$.ajax({
+  					url: '../procesos/cliente/readCliente.php',
+  					type: 'POST',
+  					data: "idcli=" + $('#selectReceptionCli').val(),
+  					success:function(r){
+  						datos = jQuery.parseJSON(r);
+  						$('#selectNombCli').val(datos['nomcliphp']);
+              $('#selectApeCli').val(datos['apecliphp']);
+            }
+
+  				})
+  			});
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+        // Funcion para agregar Cliente temporal---------
+        $('#btn-AddClient').click(function() {
+    			vacios = validarFrmVacio('form-NewReception');
+					if(vacios > 0){
+						alertify.error("Debe llenar todos los campos!");
+						return false;
+					}
+					datos = $('#form-NewReception').serialize();
+					$.ajax({
+						url: '../../procesos/reception/createCliTemp.php',
+						type: 'POST',
+						data: datos,
+						success:function(r){
+							if (r==2) {
+								alertify.error('No hay producto');
+							}else if(r==1){
+								alertify.error('Pocos Prodcutos en Stock');
+							}else{
+								$('#TablaVentasTempLoad').load("../componentes/tableVentasTemp.php");
+							}
+						}
+					})
+				});
       });
     </script>
   </body>
